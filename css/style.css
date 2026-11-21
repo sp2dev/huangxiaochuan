@@ -1,0 +1,57 @@
+input {
+    border: none;
+    width: 100%;
+}
+
+.meme-container {
+    padding: 2px;
+    width: 500px;
+    margin: auto;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(#1f1e33, 0.727);
+}
+
+.image-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.category {
+    color: red;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0px;
+    
+    outline: none;
+    border: none;
+}
+
+.title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    line-height: 100%;
+}
+
+.content {
+    font-size: 16px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.img-huang {
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.img-example {
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+}
