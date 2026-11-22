@@ -2,18 +2,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>黄仁勋都干了什么坏事？</title>
+    <title>黄笑川</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="meme-container">
-        <p class="category">Deep Rock Galactic</p>
-        <p class="title">英伟达董事会调查发现：CEO黄仁勋玩深岩银河只玩核弹工程</p>
-        <p class="content">每次看见他掏出榴弹的时候，我都祈祷着他的炮弹没往我身上砸 ——一位明显受惊的侦察高管说道</p>
-        <div class="image-container">
-            <img class="img-huang" src="./img/NVIDIA-Jensen-Huang.webp" />
-            <img class="img-example" src="./img/example.jpg" />
+
+    <div class="input-container">
+        <h2>黄笑川</h2>
+        <input type="text" id="category-input" placeholder="Tech & AI">
+        <input type="text" id="title-input" placeholder="英伟达董事会调查发现：CEO黄仁勋......">
+        <input type="text" id="content-input" placeholder="每次看见他掏出榴弹的时候，我都祈祷着他的炮弹没往我身上砸 ——一位明显受惊的侦察高管说道">
+    </div>
+
+    <div class="preview">
+        <h2>预览</h2>
+        <div class="meme-container">
+            <p class="category" id="category">Tech & AI</p>
+            <p class="title" id="title">英伟达董事会调查发现：CEO黄仁勋......</p>
+            <p class="content" id="content">balabala ——一位明显受惊的侦察高管说道</p>
+            <div class="image-container">
+                <img class="img-huang" id="img-huang" src="./img/NVIDIA-Jensen-Huang.webp" />
+                <img class="img-example" id="img-example" src="./img/西八红色.png" />
+            </div>
         </div>
     </div>
 </body>
+
+<script>
+
+    let content = document.getElementById("content");
+    let title = document.getElementById("title");
+    var category = document.getElementById("category");
+
+    document.getElementById("category-input").addEventListener("input", (event) => {
+        category.innerText = event.target.value;
+        if (event.target.value.trim() === "") {
+            category.innerText = "Tech & AI";
+        }
+    });
+
+    document.getElementById("title-input").addEventListener("input", (event) => {
+        title.innerText = event.target.value;
+        if (event.target.value.trim() === "") {
+            title.innerText = "英伟达董事会调查发现：CEO黄仁勋......";
+        }
+    });
+
+    document.getElementById("content-input").addEventListener("input", (event) => {
+        content.innerText = event.target.value;
+        if (event.target.value.trim() === "") {
+            content.innerText = "balabala ——一位明显受惊的侦察高管说道";
+        }
+    });
+
+
+
+</script>
