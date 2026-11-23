@@ -63,12 +63,7 @@ input {
     margin-bottom: 0;
 }
 
-.img-huang {
-    width: 50%;
-    height: fit-content;
-    margin-top: 5px;
-}
-
+.img-huang,
 .img-example {
     width: 50%;
     height: fit-content;
