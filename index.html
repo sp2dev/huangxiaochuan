@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>黄笑川</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -19,16 +20,23 @@
 
     <div class="preview">
         <h2>预览</h2>
-        <div class="meme-container">
-            <p class="category" id="category">Tech & AI</p>
-            <p class="title" id="title">英伟达董事会调查发现：CEO黄仁勋......</p>
-            <p class="content" id="content">balabala ——一位明显受惊的高管说道</p>
-            <div class="image-container">
-                <img class="img-huang" id="img-huang" src="./img/NVIDIA-Jensen-Huang.webp" />
-                <img class="img-example" id="img-example" src="./img/西八红色.png" />
+        <div class="meme-container-wrapper">
+            <div class="meme-container" id="meme-container">
+                <p class="category" id="category">Tech & AI</p>
+                <p class="title" id="title">英伟达董事会调查发现：CEO黄仁勋......</p>
+                <p class="content" id="content">balabala ——一位明显受惊的高管说道</p>
+                <div class="image-container">
+                    <img class="img-huang" id="img-huang" src="./img/NVIDIA-Jensen-Huang.webp" />
+                    <img class="img-example" id="img-example" src="./img/西八红色.png" />
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="download-container">
+        <button id="download-btn">下载</button>
+    </div>
+
 </body>
 
 <script src="./js/jenson.js"></script>

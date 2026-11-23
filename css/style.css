@@ -22,12 +22,16 @@ input {
     width: 100%;
 }
 
-.meme-container {
+.meme-container-wrapper {
     padding: 1%;
     width: 500px;
     margin: auto;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.meme-container {
+    padding: 0 10px;
 }
 
 .image-container {
@@ -68,4 +72,16 @@ input {
     width: 50%;
     height: fit-content;
     margin-top: 5px;
+}
+
+.download-container {
+    width: 500px;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.download-container button {
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
 }
