@@ -9,6 +9,8 @@ const categoryText = document.getElementById("category");
 
 const contentImage = document.getElementById("img-example");
 
+const downloadButton = document.getElementById("download-btn");
+
 
 categoryInput.addEventListener("input", (event) => {
     categoryText.innerText = event.target.value;
@@ -35,4 +37,13 @@ imageInput.addEventListener("change", (event) => {
     const file = event.target.files[0];
     const imageUrl = URL.createObjectURL(file);
     contentImage.src = imageUrl;
+})
+
+downloadButton.addEventListener("click", () => {
+    html2canvas(document.getElementById("meme-container"), { scale: 2 }).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "meme.png";
+        link.href = canvas.toDataURL();
+        link.click();
+    });
 })
